@@ -1,4 +1,4 @@
-Contao AJAX Layout
+Contao Changelanguage Labels
 =====================
 
-Contao extension to automatically use a different page layout for AJAX requests.
+Small Contao extensions for improved language labels in the site structure.
