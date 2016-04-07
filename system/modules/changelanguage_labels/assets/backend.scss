@@ -1,0 +1,42 @@
+ul.tl_page_language_alternates {
+	text-indent:0px;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	float:right;
+
+	&:after {
+		clear:both;
+		display:block;
+		content:"";
+	}
+
+	& > li {
+		margin:0;
+		padding:0;
+		float:left;
+
+		& > a {
+			display:block;
+			color:white;
+			text-decoration:none;
+			text-transform:uppercase;
+			background-color:#b3b3b3;
+			padding:0 4px;
+			min-width:10px;
+			height:18px;
+			line-height:17px;
+			color:white;
+			font-size:8px;
+
+			&:hover {
+				background-color:#77ac45;
+				color:white;
+			}
+		}
+
+		& + li {
+			margin-left:2px;
+		}
+	}
+}
