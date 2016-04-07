@@ -23,7 +23,7 @@ class tl_page_labels
 			$objDcaClass = new tl_page_avisota();
 		else
 			$objDcaClass = new tl_page();
-		$label = $objPage->addIcon($row, $label, $dc, $imageAttribute, $blnReturnImage, $blnProtected);
+		$label = $objDcaClass->addIcon($row, $label, $dc, $imageAttribute, $blnReturnImage, $blnProtected);
 
 		// return the label for root or folder page
 		if( $row['type'] == 'root' || $row['type'] == 'folder' )
