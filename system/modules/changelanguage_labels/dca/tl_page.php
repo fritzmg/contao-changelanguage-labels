@@ -17,9 +17,9 @@ class tl_page_labels
 	{
 		// generate the default label
 		$objDcaClass = null;
-		if (in_array('cacheicon', ModuleLoader::getActive()))
+		if( in_array('cacheicon', ModuleLoader::getActive()) )
 			$objDcaClass = new tl_page_cacheicon();
-		elseif (in_array('Avisota', ModuleLoader::getActive()))
+		elseif( in_array('Avisota', ModuleLoader::getActive()) )
 			$objDcaClass = new tl_page_avisota();
 		else
 			$objDcaClass = new tl_page();
