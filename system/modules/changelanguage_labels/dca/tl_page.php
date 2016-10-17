@@ -38,7 +38,8 @@ class tl_page_labels
 		if( $objPage->languageMain )
 		{
 			// get all pages referencing the same fallback page
-			$objAlternates = PageModel::findBy( array('languageMain = ? OR id = ?'), array( $objPage->languageMain, $objPage->languageMain ) );
+			$t = \PageModel::getTable();
+			$objAlternates = PageModel::findBy( array("$t.languageMain = ? OR $t.id = ?"), array( $objPage->languageMain, $objPage->languageMain ) );
 		}
 		else
 		{
