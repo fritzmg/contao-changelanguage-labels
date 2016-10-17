@@ -1,7 +1,7 @@
 {
 	"name":"fritzmg/contao-changelanguage-labels",
 	"description":"Small Contao extensions for improved language labels in the site structure.",
-	"keywords":["contao", "ajax", "layout"],
+	"keywords":["contao", "language", "labels", "changelanguage"],
 	"type":"contao-module",
 	"homepage":"http://www.inspiredminds.at",
 	"license":"LGPL-3.0+",
@@ -21,7 +21,7 @@
 	},
 	"require":{
 		"php":">=5.2",
-		"contao/core":"~3.0",
+		"contao/core":"~3.1",
 		"contao-community-alliance/composer-installer":"*",
 		"terminal42/contao-changelanguage": "*"
 	},
